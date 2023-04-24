@@ -1,0 +1,15 @@
+C:\Users\reosh\OneDrive\Documents\project\tutorial\bin\Debug\net6.0\tutorial.exe
+C:\Users\reosh\OneDrive\Documents\project\tutorial\bin\Debug\net6.0\tutorial.deps.json
+C:\Users\reosh\OneDrive\Documents\project\tutorial\bin\Debug\net6.0\tutorial.runtimeconfig.json
+C:\Users\reosh\OneDrive\Documents\project\tutorial\bin\Debug\net6.0\tutorial.dll
+C:\Users\reosh\OneDrive\Documents\project\tutorial\bin\Debug\net6.0\tutorial.pdb
+C:\Users\reosh\OneDrive\Documents\project\tutorial\obj\Debug\net6.0\tutorial.csproj.AssemblyReference.cache
+C:\Users\reosh\OneDrive\Documents\project\tutorial\obj\Debug\net6.0\tutorial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\reosh\OneDrive\Documents\project\tutorial\obj\Debug\net6.0\tutorial.AssemblyInfoInputs.cache
+C:\Users\reosh\OneDrive\Documents\project\tutorial\obj\Debug\net6.0\tutorial.AssemblyInfo.cs
+C:\Users\reosh\OneDrive\Documents\project\tutorial\obj\Debug\net6.0\tutorial.csproj.CoreCompileInputs.cache
+C:\Users\reosh\OneDrive\Documents\project\tutorial\obj\Debug\net6.0\tutorial.dll
+C:\Users\reosh\OneDrive\Documents\project\tutorial\obj\Debug\net6.0\refint\tutorial.dll
+C:\Users\reosh\OneDrive\Documents\project\tutorial\obj\Debug\net6.0\tutorial.pdb
+C:\Users\reosh\OneDrive\Documents\project\tutorial\obj\Debug\net6.0\tutorial.genruntimeconfig.cache
+C:\Users\reosh\OneDrive\Documents\project\tutorial\obj\Debug\net6.0\ref\tutorial.dll
