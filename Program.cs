@@ -1,6 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System.Diagnostics.Contracts;
-using tutorial.Array;
 using tutorial.Casting;
 using tutorial.Formatting_Output;
 using tutorial.String_Function;
