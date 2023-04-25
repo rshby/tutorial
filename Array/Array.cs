@@ -1,4 +1,6 @@
-﻿namespace tutorial.Array
+﻿using System.Globalization;
+
+namespace tutorial.Array
 {
    public class Array
    {
@@ -120,6 +122,81 @@
          Console.WriteLine($"value array randomArray index ke-0 : {randomArray[0]}"); // print value isi array randomArray index ke-0
          Console.WriteLine($"tipe data value array index ke-0 : {randomArray[0].GetType()}"); // print tipe data value array index ke-0
          Console.WriteLine($"tipe data value array index ke-1 : {randomArray[1].GetType()}"); // print tipe data value array index ke-1
+
+         // ------------- array 2 dimensi --------------------------
+         string[,] custNames = new string[2, 3] { { "bob", "smith", "jane" }, { "sally", "sour", "choco" } }; // create array 2 dimensi
+
+         // print value isi array index ke 0,0
+         Console.WriteLine();
+         Console.WriteLine($"value array index ke-[0,0] : {custNames[0, 0]}");
+         Console.WriteLine($"value array index ke-[0,0] menggunakan GetValue : {custNames.GetValue(0, 0)}");
+
+         Console.WriteLine($"panjang array 2 dimensi (dimeksi ke-0) : {custNames.GetLength(0)}"); // print panjang array dimensi ke-0
+         Console.WriteLine($"panjang array 2 dimensi (dimensi ke-1) : {custNames.GetLength(1)}"); // print panjang array dimensi ke-1
+
+         // print semua isi array
+         for (i = 0; i < custNames.GetLength(0); i++)
+         {
+            for (int j = 0; j < custNames.GetLength(1); j++)
+            {
+               // cek ketika index dimensi ke-0 dan dimensi ke-1 sudah ada di akhir
+               if ((i.Equals(custNames.GetLength(0) - 1)) && j.Equals(custNames.GetLength(1) - 1))
+               {
+                  Console.Write(custNames[i, j]);
+                  break;
+               }
+
+               Console.Write(custNames[i, j] + ", ");
+            }
+         }
+
+         // pass array to a function
+         int[] randNumbers = { 1, 4, 9, 2, 5, 7 };
+         Console.WriteLine();
+         PrintArray(randNumbers, "value array");
+
+         // sort array
+         System.Array.Sort(randNumbers); // syntax untuk sorting array
+         Console.WriteLine("\narray after sort");
+         PrintArray(randNumbers, "array after sort"); // print isi semua array setelah disort/diurutkan
+
+         // reverse array (sorting descending)
+         System.Array.Reverse(randNumbers); // sytax untuk reverse array
+         Console.WriteLine("\narray after reverse");
+         PrintArray(randNumbers, "array after reverse");
+
+         // get index by value in array
+         Console.WriteLine("value 1 ada di index ke : {0}", System.Array.IndexOf(randNumbers, 1));
+
+         // create new array of int
+         int[] srcArray = { 1, 2, 3 };
+         int[] destArray = new int[2];
+
+         int startIdx = 0;
+
+         //System.Array anotherArray = System.Array.CreateInstance(typeof(int), srcArray);
+         System.Array.Copy(srcArray, startIdx, destArray, 0, destArray.Length);
+         Console.WriteLine("\ndestination array after copy");
+         PrintArray(destArray, "destArray");
+
+         // create new array menggunakan syntax CreateInstance
+         var anotherArray = System.Array.CreateInstance(typeof(int), 10);
+         srcArray.CopyTo(anotherArray, 5); // copy isi array variabel srcArray ke dalam variabel anotherArray, dipaste ke variabel anotherArray mulai index ke-5
+
+         // print isi array anotherArray
+         foreach (var number in anotherArray)
+         {
+            Console.WriteLine($"Copy to : {number}");
+         }
+      }
+
+      // create fuction to print array use foreach
+      public void PrintArray(int[] inputArr, string message)
+      {
+         foreach (var number in inputArr)
+         {
+            Console.WriteLine("{0} : {1}", message, number);
+         }
       }
    }
 }
